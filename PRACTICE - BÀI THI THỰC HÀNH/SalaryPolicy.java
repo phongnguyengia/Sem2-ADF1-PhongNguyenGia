@@ -1,21 +1,13 @@
+package phong;
+
 public abstract class SalaryPolicy {
-    private float baseSalary;
-
-    public SalaryPolicy() {
-        //nothing
-    }
-
-    public SalaryPolicy(float baseSalary) {
-        this.baseSalary = baseSalary;
-    }
-
-    public float getBaseSalary() {
+	private static  float baseSalary;
+	public float getBaseSalary() {
         return baseSalary;
     }
 
-    public void setBaseSalary(float baseSalary) {
-        this.baseSalary = baseSalary;
+    public static void setBaseSalary(float _baseSalary) {
+       baseSalary = _baseSalary;
     }
-
-    abstract float getSalary();
+	abstract float getSalary();
 }
